@@ -1,5 +1,6 @@
     Для запуска проекта необходимо:
 - создать MySQL-БД vendorDB;
+- выполнить composer install;
 - выполнить миграцию таблиц: php artisan migrate;
 - выполнить в БД скрипт toVendor.sql (в корне проекта);
 - запустить проект: php artisan serve.
