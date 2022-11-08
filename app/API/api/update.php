@@ -1,4 +1,5 @@
 <?php
+    try{
     header("Access-Control-Allow-Origin: *");
     header("Content-Type: application/json; charset=UTF-8");
     header("Access-Control-Allow-Methods: POST");
@@ -26,4 +27,6 @@
     } else{
         echo json_encode("Data could not be updated");
     }
-?>
+    } catch(\Exception $e){
+    echo 'Houston, we have a duplicate.';
+    }
