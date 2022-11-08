@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('requestVendor', 'App\Http\Controllers\API\vendorApiController@requestVendor');
-Route::get('requestEquipment', 'App\Http\Controllers\API\vendorApiController@requestEquipment');
+Route::get('requestVendor', 'App\API\vendorApiController@requestVendor');
+Route::get('requestEquipment', 'App\API\vendorApiController@requestEquipment');
 
-Route::post('saveVendor', 'App\Http\Controllers\API\vendorApiController@saveVendor');
-Route::post('saveEquipment', 'App\Http\Controllers\API\vendorApiController@saveEquipment');
+Route::post('saveVendor', 'App\API\vendorApiController@saveVendor');
+Route::post('saveEquipment', 'App\API\vendorApiController@saveEquipment');

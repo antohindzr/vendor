@@ -28,5 +28,6 @@
 - GET: http://127.0.0.1:8080/app/api/api/read.php;
 - GET: http://127.0.0.1:8080/app/api/api/single_read.php/?id={};
 - POST: http://127.0.0.1:8080/app/api/api/delete.php; (body raw id);
-- POST: http://127.0.0.1:8080/app/api/api/create.php; (body raw vendorID, "serial");
-- POST: http://127.0.0.1:8080/app/api/api/update.php; (body raw id, vendorID, "serial").
+- POST: http://127.0.0.1:8080/app/api/api/create.php; (body raw vendorID, serial);
+- POST: http://localhost:8080/api/saveEquipment?vendorID=1&serial=XXAAAAAXAI;
+- POST: http://localhost:8080/api/saveVendor?vendorType=TP-Link TL-WR745&maskSN=XXBBBBBBBB;

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\API;
 
 use App\Exceptions\DbException;
 use App\Http\Controllers\Controller;
